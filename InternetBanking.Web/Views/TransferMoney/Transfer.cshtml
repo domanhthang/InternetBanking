@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Transfer";
+}
+
+@using (Html.BeginForm())
+{
+<div>
+    So Tien @ViewData["sender"] gui: <input type="text" name="sendamount" /><br />
+    So Tien @ViewData["receive"] se nhan: <input type="text" disabled value="" /><br />
+
+    Ten tai khoan gui (@ViewData["sender"]): <input type="text" name="sendername" /><br />
+    Tai khoan gui (@ViewData["sender"]): <input type="text" name="senderaccount" /><br />
+
+    Ten tai khoan nhan (@ViewData["reveive"]): <input type="text" name="receivename" /><br />
+    Tai khoan nhan (@ViewData["reveive"]): <input type="text" name="receiveaccoount" /><br />
+
+    Email cua ban: <input type="text" name="email" /><br />
+    So dien thoai cua ban: <input type="text" name="phone" /><br />
+
+    <input type="submit" value="Submit" />
+</div>
+}
+

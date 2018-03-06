@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8ABB20AC-FB9C-4531-BA82-EE321613325E}</ProjectGuid>
+    <ProjectGuid>{6D7093B8-9E98-4B0E-813D-125EEF6984ED}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>InternetBanking.Core</RootNamespace>
-    <AssemblyName>InternetBanking.Core</AssemblyName>
+    <RootNamespace>InternetBanking.Service</RootNamespace>
+    <AssemblyName>InternetBanking.Service</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,20 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Domain\Bank\ACBBank.cs" />
-    <Compile Include="Domain\Bank\CreateBank.cs" />
-    <Compile Include="Domain\Bank\IAccountBank.cs" />
-    <Compile Include="Domain\Bank\VietComBank.cs" />
-    <Compile Include="Domain\Bank\VietinBank.cs" />
-    <Compile Include="Domain\Money\CreateMoney.cs" />
-    <Compile Include="Domain\Money\IMoney.cs" />
-    <Compile Include="Domain\Money\VND.cs" />
-    <Compile Include="Domain\User\User.cs" />
-    <Compile Include="Interface\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransferMoney.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Domain\Admin\" />
+    <ProjectReference Include="..\InternetBanking.Core\InternetBanking.Core.csproj">
+      <Project>{8abb20ac-fb9c-4531-ba82-ee321613325e}</Project>
+      <Name>InternetBanking.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

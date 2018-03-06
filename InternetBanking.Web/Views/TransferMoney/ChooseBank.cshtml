@@ -1,0 +1,25 @@
+﻿@using InternetBanking.Web.Models
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@using (Html.BeginForm())
+{
+    <div>Toi co</div>
+    <select name="banksender">
+        <option value="vcb">VietComBank</option>
+        <option value="vtb">VietinBank</option>
+        <option value="acb">AChauBank</option>
+    </select>
+
+    <div>Toi nhan</div>
+    <select name="bankrecieve">
+        <option value="vcb">VietComBank</option>
+        <option value="vtb">VietinBank</option>
+        <option value="acb">AChauBank</option>
+    </select>
+
+    <input type="submit" value="Continue" />
+}

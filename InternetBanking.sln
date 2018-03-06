@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternetBanking.Core", "InternetBanking.Core\InternetBanking.Core.csproj", "{8ABB20AC-FB9C-4531-BA82-EE321613325E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternetBanking.Data", "InternetBanking.Data\InternetBanking.Data.csproj", "{8025BD58-E7F8-4C7F-8E1F-77D591B5616A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternetBanking.Web", "InternetBanking.Web\InternetBanking.Web.csproj", "{3331BE53-E6AA-45C3-B049-F36C27F58974}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternetBanking.Service", "InternetBanking.Service\InternetBanking.Service.csproj", "{6D7093B8-9E98-4B0E-813D-125EEF6984ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{8ABB20AC-FB9C-4531-BA82-EE321613325E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8ABB20AC-FB9C-4531-BA82-EE321613325E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8ABB20AC-FB9C-4531-BA82-EE321613325E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8025BD58-E7F8-4C7F-8E1F-77D591B5616A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8025BD58-E7F8-4C7F-8E1F-77D591B5616A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8025BD58-E7F8-4C7F-8E1F-77D591B5616A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8025BD58-E7F8-4C7F-8E1F-77D591B5616A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3331BE53-E6AA-45C3-B049-F36C27F58974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3331BE53-E6AA-45C3-B049-F36C27F58974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3331BE53-E6AA-45C3-B049-F36C27F58974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3331BE53-E6AA-45C3-B049-F36C27F58974}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D7093B8-9E98-4B0E-813D-125EEF6984ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D7093B8-9E98-4B0E-813D-125EEF6984ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D7093B8-9E98-4B0E-813D-125EEF6984ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D7093B8-9E98-4B0E-813D-125EEF6984ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
