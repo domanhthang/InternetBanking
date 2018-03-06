@@ -22,16 +22,14 @@ namespace InternetBanking.Web.Controllers
 		{
 			string banksender = form["banksender"];
 			string bankreceive = form["bankrecieve"];
-			object banks = new Object { "sender" = banksender, receive = bankreceive };
-			return RedirectToAction("Transfer", banks);
+			//List<string> banks = new List<string>() { banksender, bankreceive };
+			return RedirectToAction("Transfer", new {sender= banksender, receive = bankreceive });
 		}
 
 		// GET: TransferMoney
 		[HttpGet]
-        public ActionResult Transfer(object banks)
+        public ActionResult Transfer(string sender, string receive)
         {
-			var sender = ((Dictionary<string, string>)banks)["sender"];
-			var receive = ((Dictionary<string, string>)banks)["receive"];
 			ViewData["sender"] = sender;
 			ViewData["receive"] = receive;
 			return View();
@@ -47,7 +45,7 @@ namespace InternetBanking.Web.Controllers
 			payment.User = new User { Email = form["email"] };
 
 			payment.Transfer();
-			return View("Home/Index");
+			return RedirectToAction("Index", "Home");
 		}
 
 		
